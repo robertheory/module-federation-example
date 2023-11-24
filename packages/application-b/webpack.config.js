@@ -35,7 +35,7 @@ module.exports = {
       library: { type: 'var', name: 'application_b' },
       filename: 'remoteEntry.js',
       exposes: {
-        SayHelloFromB: './src/app',
+        './SayHelloFromB': './src/app',
       },
       remotes: {
         application_a: 'application_a',
