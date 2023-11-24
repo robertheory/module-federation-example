@@ -1,0 +1,23 @@
+{
+  "name": "module-federation-example",
+  "description": "Module Federation Example",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Roberto Costa",
+    "email": "hello@robertheory.com",
+    "url": "https://robertheory.com"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "wsrun --parallel start",
+    "build": "yarn workspaces run build",
+    "dev": "wsrun --parallel dev"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  }
+}
